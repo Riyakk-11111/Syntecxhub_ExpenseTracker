@@ -83,6 +83,7 @@
         width: 100%;
         height: auto;
         border-right: none;
+        padding: 20px;
     }
 
     .settings-page .content {
@@ -91,4 +92,26 @@
         padding: 20px;
     }
 
+    .settings-page .page-header h1 {
+        font-size: 32px;
+    }
+
+    .settings-page .page-header p {
+        font-size: 16px;
+    }
+
+    .settings-page .settings-card {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .settings-page .input-box {
+        width: 100%;
+    }
+
+    .settings-page .save-btn {
+        width: 100%;
+    }
 }
