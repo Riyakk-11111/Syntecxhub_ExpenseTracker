@@ -489,23 +489,4 @@
         width: 100%;
     }
 }
-@media (max-width: 768px) {
 
-    .settings-page.main {
-        flex-direction: column;
-    }
-
-    .settings-page .sidebar {
-        position: relative;
-        width: 100%;
-        height: auto;
-        border-right: none;
-    }
-
-    .settings-page .content {
-        margin-left: 0;
-        width: 100%;
-        padding: 20px;
-    }
-
-}
