@@ -285,10 +285,18 @@ function Dashboard() {
         responsive: true,
         plugins: { legend: { display: false } },
         scales: {
-            x: {
-                ticks: { color: "white" },
-                grid: { color: "rgba(255,255,255,0.05)" },
-            },
+           x: {
+    offset: true,
+    ticks: {
+        color: "#9ca3af",
+        autoSkip: false,
+        maxRotation: 0,
+        minRotation: 0,
+    },
+    grid: {
+        display: false,
+    },
+},
             y: {
                 beginAtZero: true,
                 ticks: { color: "white" },
@@ -298,7 +306,20 @@ function Dashboard() {
     };
 
     const trendBarData = {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+       labels: [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+],
         datasets: [
             {
                 data: barChartData,
