@@ -113,14 +113,19 @@ function getWeeklyTrend(expenseList) {
 
 function getMonthBarData(expenseList, selectedYear) {
     const monthData = {
-        Jan: 0,
-        Feb: 0,
-        Mar: 0,
-        Apr: 0,
-        May: 0,
-        Jun: 0,
-    };
-
+    Jan: 0,
+    Feb: 0,
+    Mar: 0,
+    Apr: 0,
+    May: 0,
+    Jun: 0,
+    Jul: 0,
+    Aug: 0,
+    Sep: 0,
+    Oct: 0,
+    Nov: 0,
+    Dec: 0,
+};
     expenseList.forEach((expense) => {
         if (!expense.Date) return;
 
@@ -141,13 +146,19 @@ function getMonthBarData(expenseList, selectedYear) {
     });
 
     return [
-        monthData.Jan,
-        monthData.Feb,
-        monthData.Mar,
-        monthData.Apr,
-        monthData.May,
-        monthData.Jun,
-    ];
+    monthData.Jan,
+    monthData.Feb,
+    monthData.Mar,
+    monthData.Apr,
+    monthData.May,
+    monthData.Jun,
+    monthData.Jul,
+    monthData.Aug,
+    monthData.Sep,
+    monthData.Oct,
+    monthData.Nov,
+    monthData.Dec,
+];
 }
 
 function Dashboard() {
