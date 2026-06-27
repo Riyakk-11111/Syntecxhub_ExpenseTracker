@@ -330,17 +330,32 @@ function Dashboard() {
     };
 
     const trendBarOptions = {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: { legend: { display: false } },
-        scales: {
-            x: {
-                ticks: { color: "#9ca3af" },
-                grid: { display: false },
-            },
-            y: { display: false, beginAtZero: true },
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+        legend: {
+            display: false,
         },
-    };
+    },
+    scales: {
+        x: {
+            offset: true,
+            ticks: {
+                color: "#9ca3af",
+                autoSkip: false,
+                maxRotation: 0,
+                minRotation: 0,
+            },
+            grid: {
+                display: false,
+            },
+        },
+        y: {
+            display: false,
+            beginAtZero: true,
+        },
+    },
+};
 
     return (
         <div
