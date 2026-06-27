@@ -332,11 +332,20 @@ function Dashboard() {
     const trendBarOptions = {
     responsive: true,
     maintainAspectRatio: false,
+
+    layout: {
+        padding: {
+            left: 10,
+            right: 10,
+        },
+    },
+
     plugins: {
         legend: {
             display: false,
         },
     },
+
     scales: {
         x: {
             offset: true,
@@ -356,7 +365,6 @@ function Dashboard() {
         },
     },
 };
-
     return (
         <div
             className={`dashboard-page main${
