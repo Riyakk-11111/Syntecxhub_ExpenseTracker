@@ -260,6 +260,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding:35px;
+    min-height:380px;
 }
 
 .dashboard-page .expense-header {
@@ -271,19 +273,18 @@
 }
 
 .dashboard-page .expense-left {
-    width: 40%;
+    width: 28%;
 }
 
 .dashboard-page .expense-right {
-    width: 55%;
-    height: 220px;
+    width: 70%;
+    height: 260px;
 }
 
 .dashboard-page #expenseTrendChart {
     width: 100% !important;
-    height: 220px !important;
+    height: 260px !important;
 }
-
 .dashboard-page .distribution-container {
     display: flex;
     align-items: center;
